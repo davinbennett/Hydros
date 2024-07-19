@@ -1,0 +1,17 @@
+Server/key.json
+Server/node_modules/
+Server/public/
+Server/routes/
+Server/index.html
+Application/smartirrigation/lib/firebase_options.dart
+
+Application/smartirrigation/android/app/google-services.json
+
+Application/smartirrigation/web/
+Application/smartirrigation/windows/
+Application/smartirrigation/debug.keystore
+
+Application/smartirrigation/build/app/outputs/apk/debug/app-debug.apk
+Application/smartirrigation/build/app/outputs/flutter-apk/app-debug.apk 
+Documentation/video/TikTok_IoT.mp4
+Application/smartirrigation/build/app/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libVkLayer_khronos_validation.so

@@ -1,0 +1,1 @@
+ D:\\Dokumen\\BINUS\\LATIHAN\ BINUS\\embedded\\SmartIrrigation\\smartirrigation\\.dart_tool\\flutter_build\\83a5fa3525d23433469fc2b3a32b7965\\native_assets.yaml: 

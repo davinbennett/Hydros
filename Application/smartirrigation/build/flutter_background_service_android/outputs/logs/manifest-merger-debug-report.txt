@@ -1,0 +1,75 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:1:1-35:12
+	package
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:2:3-50
+		INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:4:5-76
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:4:22-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:6:22-65
+application
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:9:5-34:19
+service#id.flutter.flutter_background_service.BackgroundService
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:10:9-15:15
+	android:enabled
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:11:13-35
+	android:exported
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:12:13-36
+	android:stopWithTask
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:14:13-41
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:13:13-46
+receiver#id.flutter.flutter_background_service.WatchdogReceiver
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:17:9-21:15
+	android:enabled
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:19:13-35
+	android:exported
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:18:13-45
+receiver#id.flutter.flutter_background_service.BootReceiver
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:23:9-32:20
+	android:enabled
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:25:13-35
+	android:exported
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:26:13-36
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:24:13-41
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:28:13-31:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:29:17-78
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:29:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:30:17-81
+	android:name
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:30:25-79
+uses-sdk
+INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml

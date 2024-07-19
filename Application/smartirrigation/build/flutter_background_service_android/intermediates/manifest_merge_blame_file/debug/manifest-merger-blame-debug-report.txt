@@ -1,0 +1,62 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="id.flutter.flutter_background_service" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="16" />
+7-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+9-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:4:5-76
+9-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:4:22-74
+10    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+10-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:5:5-80
+10-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:5:22-78
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:6:22-65
+12
+13    <application>
+13-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:9:5-34:19
+14        <service
+14-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:10:9-15:15
+15            android:name="id.flutter.flutter_background_service.BackgroundService"
+15-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:13:13-46
+16            android:enabled="true"
+16-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:11:13-35
+17            android:exported="true"
+17-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:12:13-36
+18            android:stopWithTask="false" />
+18-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:14:13-41
+19
+20        <receiver
+20-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:17:9-21:15
+21            android:name="id.flutter.flutter_background_service.WatchdogReceiver"
+21-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:18:13-45
+22            android:enabled="true"
+22-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:19:13-35
+23            android:exported="true" />
+23-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:20:13-36
+24        <receiver
+24-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:23:9-32:20
+25            android:name="id.flutter.flutter_background_service.BootReceiver"
+25-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:24:13-41
+26            android:enabled="true"
+26-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:25:13-35
+27            android:exported="true" >
+27-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:26:13-36
+28            <intent-filter>
+28-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:28:13-31:29
+29                <action android:name="android.intent.action.BOOT_COMPLETED" />
+29-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:29:17-78
+29-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:29:25-76
+30                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+30-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:30:17-81
+30-->C:\Users\User ID\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_background_service_android-6.2.2\android\src\main\AndroidManifest.xml:30:25-79
+31            </intent-filter>
+32        </receiver>
+33    </application>
+34
+35</manifest>

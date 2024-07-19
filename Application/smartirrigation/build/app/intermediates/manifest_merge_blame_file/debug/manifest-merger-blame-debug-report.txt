@@ -1,0 +1,654 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.smartirrigation"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <!--
+17	Required to query activities that can process text, see:
+18	https://developer.android.com/training/package-visibility?hl=en and
+19	https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20	
+21	In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:29:2-34:12
+24        <intent>
+24-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:30:3-33:12
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:31:4-64
+25-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:31:12-61
+26
+27            <data android:mimeType="text/plain" />
+27-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:32:4-42
+27-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:32:10-39
+28        </intent>
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+31-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+32-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+32-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+33    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+33-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+33-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+34    <uses-permission android:name="android.permission.CAMERA" />
+34-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-65
+34-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-62
+35
+36    <uses-feature android:name="android.hardware.camera" />
+36-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-60
+36-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:11:19-57
+37
+38    <uses-permission android:name="android.permission.FLASHLIGHT" />
+38-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-69
+38-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-66
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+39-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-77
+39-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-74
+40    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+40-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-81
+40-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-78
+41    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+41-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:26:5-82
+41-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:26:22-79
+42    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+42-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\User ID\.gradle\caches\transforms-3\925adf2cb1a93d5454c883e896b2cb12\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+42-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\User ID\.gradle\caches\transforms-3\925adf2cb1a93d5454c883e896b2cb12\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+43
+44    <permission
+44-->[androidx.core:core:1.12.0] C:\Users\User ID\.gradle\caches\transforms-3\88e79c2fe9c7f0476768d2825d8e9dd6\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+45        android:name="com.example.smartirrigation.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+45-->[androidx.core:core:1.12.0] C:\Users\User ID\.gradle\caches\transforms-3\88e79c2fe9c7f0476768d2825d8e9dd6\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+46        android:protectionLevel="signature" />
+46-->[androidx.core:core:1.12.0] C:\Users\User ID\.gradle\caches\transforms-3\88e79c2fe9c7f0476768d2825d8e9dd6\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+47
+48    <uses-permission android:name="com.example.smartirrigation.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+48-->[androidx.core:core:1.12.0] C:\Users\User ID\.gradle\caches\transforms-3\88e79c2fe9c7f0476768d2825d8e9dd6\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+48-->[androidx.core:core:1.12.0] C:\Users\User ID\.gradle\caches\transforms-3\88e79c2fe9c7f0476768d2825d8e9dd6\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+49
+50    <uses-feature
+50-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+51        android:name="android.hardware.camera.front"
+51-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+52        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+52-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+53    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+54    <uses-feature
+54-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+55        android:name="android.hardware.camera.autofocus"
+55-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+56        android:required="false" />
+56-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+57    <uses-feature
+57-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+58        android:name="android.hardware.camera.flash"
+58-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+59        android:required="false" />
+59-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+60    <uses-feature
+60-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+61        android:name="android.hardware.screen.landscape"
+61-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+62        android:required="false" />
+62-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+63    <uses-feature
+63-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+64        android:name="android.hardware.wifi"
+64-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+65        android:required="false" />
+65-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+66
+67    <application
+68        android:name="android.app.Application"
+68-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:2:38-71
+69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+69-->[androidx.core:core:1.12.0] C:\Users\User ID\.gradle\caches\transforms-3\88e79c2fe9c7f0476768d2825d8e9dd6\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+70        android:debuggable="true"
+71        android:icon="@mipmap/launcher_icon"
+71-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:2:72-108
+72        android:label="HYDROS"
+72-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:2:15-37
+73        android:largeHeap="true"
+73-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-33
+74        android:theme="@style/Theme.AppCompat.NoActionBar"
+74-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-59
+75        android:usesCleartextTraffic="true" >
+75-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\debug\AndroidManifest.xml:7:18-53
+76
+77        <!-- possibly other elements -->
+78        <activity
+78-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:3-15:14
+79            android:name="com.example.smartirrigation.MainActivity"
+79-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:13-41
+80            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+80-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:132-282
+81            android:exported="true"
+81-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:42-65
+82            android:hardwareAccelerated="true"
+82-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:283-317
+83            android:launchMode="singleTop"
+83-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:66-96
+84            android:theme="@style/LaunchTheme"
+84-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:97-131
+85            android:windowSoftInputMode="adjustResize" >
+85-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:3:318-360
+86
+87            <!--
+88			Specifies an Android theme to apply to this Activity as soon as
+89			the Android process has started. This theme is visible to the user
+90			while the Flutter UI initializes. After that, this theme continues
+91			to determine the Window background behind the Flutter UI.
+92            -->
+93            <meta-data
+93-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:10:4-111
+94                android:name="io.flutter.embedding.android.NormalTheme"
+94-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:10:15-70
+95                android:resource="@style/NormalTheme" />
+95-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:10:71-108
+96
+97            <intent-filter>
+97-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:11:4-14:20
+98                <action android:name="android.intent.action.MAIN" />
+98-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:12:5-57
+98-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:12:13-54
+99
+100                <category android:name="android.intent.category.LAUNCHER" />
+100-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:13:5-65
+100-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:13:15-62
+101            </intent-filter>
+102        </activity>
+103        <!--
+104		Don't delete the meta-data below.
+105		This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+106        -->
+107        <meta-data
+107-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:20:3-66
+108            android:name="flutterEmbedding"
+108-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:20:14-45
+109            android:value="2" />
+109-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:20:46-63
+110
+111        <service
+111-->[:cloud_firestore] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+112            android:name="com.google.firebase.components.ComponentDiscoveryService"
+112-->[:cloud_firestore] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+113            android:directBootAware="true"
+113-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
+114            android:exported="false" >
+114-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
+115            <meta-data
+115-->[:cloud_firestore] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+116                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+116-->[:cloud_firestore] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[:cloud_firestore] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+118            <meta-data
+118-->[:firebase_auth] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+119                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+119-->[:firebase_auth] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[:firebase_auth] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+121            <meta-data
+121-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+122                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+122-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+124            <meta-data
+124-->[:firebase_core] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+125                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+125-->[:firebase_core] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[:firebase_core] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+128                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+128-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\User ID\.gradle\caches\transforms-3\a74b6d05900c758704f16ae130441ae5\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:17:13-19:85
+131                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+131-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\User ID\.gradle\caches\transforms-3\a74b6d05900c758704f16ae130441ae5\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:18:17-122
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\User ID\.gradle\caches\transforms-3\a74b6d05900c758704f16ae130441ae5\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:19:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\User ID\.gradle\caches\transforms-3\a74b6d05900c758704f16ae130441ae5\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:20:13-22:85
+134                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+134-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\User ID\.gradle\caches\transforms-3\a74b6d05900c758704f16ae130441ae5\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:21:17-111
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\User ID\.gradle\caches\transforms-3\a74b6d05900c758704f16ae130441ae5\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:22:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:57:13-59:85
+137                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+137-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:58:17-122
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:59:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:60:13-62:85
+140                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+140-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:61:17-119
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:62:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\User ID\.gradle\caches\transforms-3\9ee9f28ef79bd54e06ede295adc6ffbc\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+143                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+143-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\User ID\.gradle\caches\transforms-3\9ee9f28ef79bd54e06ede295adc6ffbc\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\User ID\.gradle\caches\transforms-3\9ee9f28ef79bd54e06ede295adc6ffbc\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\User ID\.gradle\caches\transforms-3\fc9d9132e38e539e4d62a94ac750326b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+146                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+146-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\User ID\.gradle\caches\transforms-3\fc9d9132e38e539e4d62a94ac750326b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\User ID\.gradle\caches\transforms-3\fc9d9132e38e539e4d62a94ac750326b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\User ID\.gradle\caches\transforms-3\fc9d9132e38e539e4d62a94ac750326b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+149                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+149-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\User ID\.gradle\caches\transforms-3\fc9d9132e38e539e4d62a94ac750326b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\User ID\.gradle\caches\transforms-3\fc9d9132e38e539e4d62a94ac750326b\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\6e5b94b3505cc139ff662e1633438a22\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
+152                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+152-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\6e5b94b3505cc139ff662e1633438a22\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\6e5b94b3505cc139ff662e1633438a22\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
+155                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+155-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\User ID\.gradle\caches\transforms-3\a525eb19774de60cc3768eb1554700f5\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+158                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+158-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\User ID\.gradle\caches\transforms-3\a525eb19774de60cc3768eb1554700f5\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\User ID\.gradle\caches\transforms-3\a525eb19774de60cc3768eb1554700f5\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+160        </service>
+161        <service
+161-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+162            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+162-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+163            android:exported="false"
+163-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" />
+164-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+165        <service
+165-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+166            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+166-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+167            android:exported="false" >
+167-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+168            <intent-filter>
+168-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+169                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+169-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+169-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+170            </intent-filter>
+171        </service>
+172
+173        <receiver
+173-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+174            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+174-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+175            android:exported="true"
+175-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+176            android:permission="com.google.android.c2dm.permission.SEND" >
+176-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+177            <intent-filter>
+177-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+178                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+178-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+178-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+179            </intent-filter>
+180        </receiver>
+181
+182        <provider
+182-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+183            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+183-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+184            android:authorities="com.example.smartirrigation.flutterfirebasemessaginginitprovider"
+184-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+185            android:exported="false"
+185-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+186            android:initOrder="99" />
+186-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+187
+188        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+188-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-91
+188-->[:flutter_barcode_scanner] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:19-88
+189
+190        <provider
+190-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+191            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+191-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+192            android:authorities="com.example.smartirrigation.flutter.image_provider"
+192-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+193            android:exported="false"
+193-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+194            android:grantUriPermissions="true" >
+194-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+195            <meta-data
+195-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+196                android:name="android.support.FILE_PROVIDER_PATHS"
+196-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+197                android:resource="@xml/flutter_image_picker_file_paths" />
+197-->[:image_picker_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+198        </provider>
+199
+200        <service
+200-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-18:44
+201            android:name="id.flutter.flutter_background_service.BackgroundService"
+201-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-83
+202            android:enabled="true"
+202-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-35
+203            android:exported="true"
+203-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-36
+204            android:stopWithTask="false" />
+204-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-41
+205
+206        <receiver
+206-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:39
+207            android:name="id.flutter.flutter_background_service.WatchdogReceiver"
+207-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-82
+208            android:enabled="true"
+208-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
+209            android:exported="true" />
+209-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+210        <receiver
+210-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-32:20
+211            android:name="id.flutter.flutter_background_service.BootReceiver"
+211-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-78
+212            android:enabled="true"
+212-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-35
+213            android:exported="true" >
+213-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-36
+214            <intent-filter>
+214-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-31:29
+215                <action android:name="android.intent.action.BOOT_COMPLETED" />
+215-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-79
+215-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:29:25-76
+216                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+216-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:17-82
+216-->[:flutter_background_service_android] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:25-79
+217            </intent-filter>
+218        </receiver>
+219
+220        <activity
+220-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+221            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+221-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+222            android:excludeFromRecents="true"
+222-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+223            android:exported="true"
+223-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+224            android:launchMode="singleTask"
+224-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+225-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+226            <intent-filter>
+226-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+227                <action android:name="android.intent.action.VIEW" />
+227-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+227-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+228
+229                <category android:name="android.intent.category.DEFAULT" />
+229-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+229-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+230                <category android:name="android.intent.category.BROWSABLE" />
+230-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+230-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+231
+232                <data
+232-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:32:4-42
+233                    android:host="firebase.auth"
+234                    android:path="/"
+235                    android:scheme="genericidp" />
+236            </intent-filter>
+237        </activity>
+238        <activity
+238-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+239            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+239-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+240            android:excludeFromRecents="true"
+240-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+241            android:exported="true"
+241-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+242            android:launchMode="singleTask"
+242-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+243            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+243-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+244            <intent-filter>
+244-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+245                <action android:name="android.intent.action.VIEW" />
+245-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+245-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+246
+247                <category android:name="android.intent.category.DEFAULT" />
+247-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+247-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+248                <category android:name="android.intent.category.BROWSABLE" />
+248-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+248-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\User ID\.gradle\caches\transforms-3\8eb092ace6b531a84f955e613493ad86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+249
+250                <data
+250-->D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\android\app\src\main\AndroidManifest.xml:32:4-42
+251                    android:host="firebase.auth"
+252                    android:path="/"
+253                    android:scheme="recaptcha" />
+254            </intent-filter>
+255        </activity>
+256
+257        <receiver
+257-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:29:9-40:20
+258            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+258-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:30:13-78
+259            android:exported="true"
+259-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:31:13-36
+260            android:permission="com.google.android.c2dm.permission.SEND" >
+260-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:32:13-73
+261            <intent-filter>
+261-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+262                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+262-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+262-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+263            </intent-filter>
+264
+265            <meta-data
+265-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:37:13-39:40
+266                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+266-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:38:17-92
+267                android:value="true" />
+267-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:39:17-37
+268        </receiver>
+269        <!--
+270             FirebaseMessagingService performs security checks at runtime,
+271             but set to not exported to explicitly avoid allowing another app to call it.
+272        -->
+273        <service
+273-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:46:9-53:19
+274            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+274-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:47:13-82
+275            android:directBootAware="true"
+275-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:48:13-43
+276            android:exported="false" >
+276-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\User ID\.gradle\caches\transforms-3\b6119399e3936e1a24e95f485ce46c84\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:49:13-37
+277            <intent-filter android:priority="-500" >
+277-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+278                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+278-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+278-->[:firebase_messaging] D:\Dokumen\BINUS\LATIHAN BINUS\embedded\SmartIrrigation\smartirrigation\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+279            </intent-filter>
+280        </service>
+281
+282        <activity
+282-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User ID\.gradle\caches\transforms-3\d2304228a9a133b1e1101cb62296edd6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+283            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+283-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User ID\.gradle\caches\transforms-3\d2304228a9a133b1e1101cb62296edd6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+284            android:exported="false"
+284-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User ID\.gradle\caches\transforms-3\d2304228a9a133b1e1101cb62296edd6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+285            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+285-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User ID\.gradle\caches\transforms-3\d2304228a9a133b1e1101cb62296edd6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+286
+287        <provider
+287-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+288            android:name="com.google.firebase.provider.FirebaseInitProvider"
+288-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+289            android:authorities="com.example.smartirrigation.firebaseinitprovider"
+289-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+290            android:directBootAware="true"
+290-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+291            android:exported="false"
+291-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+292            android:initOrder="100" />
+292-->[com.google.firebase:firebase-common:20.4.3] C:\Users\User ID\.gradle\caches\transforms-3\a2f1f6a272c94c84de5dc1b8e1eb86a6\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
+293
+294        <meta-data
+294-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\User ID\.gradle\caches\transforms-3\049d82fb65ba0fc19d700b78ed4dcea8\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+295            android:name="com.google.android.gms.version"
+295-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\User ID\.gradle\caches\transforms-3\049d82fb65ba0fc19d700b78ed4dcea8\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+296            android:value="@integer/google_play_services_version" />
+296-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\User ID\.gradle\caches\transforms-3\049d82fb65ba0fc19d700b78ed4dcea8\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+297
+298        <provider
+298-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User ID\.gradle\caches\transforms-3\adf0c7ebd6fb726d0c1b836dc1459fd8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+299            android:name="androidx.startup.InitializationProvider"
+299-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User ID\.gradle\caches\transforms-3\adf0c7ebd6fb726d0c1b836dc1459fd8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+300            android:authorities="com.example.smartirrigation.androidx-startup"
+300-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User ID\.gradle\caches\transforms-3\adf0c7ebd6fb726d0c1b836dc1459fd8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+301            android:exported="false" >
+301-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User ID\.gradle\caches\transforms-3\adf0c7ebd6fb726d0c1b836dc1459fd8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+302            <meta-data
+302-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User ID\.gradle\caches\transforms-3\adf0c7ebd6fb726d0c1b836dc1459fd8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+303                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+303-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User ID\.gradle\caches\transforms-3\adf0c7ebd6fb726d0c1b836dc1459fd8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+304                android:value="androidx.startup" />
+304-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User ID\.gradle\caches\transforms-3\adf0c7ebd6fb726d0c1b836dc1459fd8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+305            <meta-data
+305-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\User ID\.gradle\caches\transforms-3\83217138010e197ff7819fe1ca8daf9d\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+306                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+306-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\User ID\.gradle\caches\transforms-3\83217138010e197ff7819fe1ca8daf9d\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+307                android:value="androidx.startup" />
+307-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\User ID\.gradle\caches\transforms-3\83217138010e197ff7819fe1ca8daf9d\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+308            <meta-data
+308-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+309                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+309-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+310                android:value="androidx.startup" />
+310-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+311        </provider>
+312
+313        <uses-library
+313-->[androidx.window:window:1.0.0-beta04] C:\Users\User ID\.gradle\caches\transforms-3\e60c7207e64f7de078c98aab65d167ba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+314            android:name="androidx.window.extensions"
+314-->[androidx.window:window:1.0.0-beta04] C:\Users\User ID\.gradle\caches\transforms-3\e60c7207e64f7de078c98aab65d167ba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+315            android:required="false" />
+315-->[androidx.window:window:1.0.0-beta04] C:\Users\User ID\.gradle\caches\transforms-3\e60c7207e64f7de078c98aab65d167ba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+316        <uses-library
+316-->[androidx.window:window:1.0.0-beta04] C:\Users\User ID\.gradle\caches\transforms-3\e60c7207e64f7de078c98aab65d167ba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+317            android:name="androidx.window.sidecar"
+317-->[androidx.window:window:1.0.0-beta04] C:\Users\User ID\.gradle\caches\transforms-3\e60c7207e64f7de078c98aab65d167ba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+318            android:required="false" />
+318-->[androidx.window:window:1.0.0-beta04] C:\Users\User ID\.gradle\caches\transforms-3\e60c7207e64f7de078c98aab65d167ba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+319
+320        <receiver
+320-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+321            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+321-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+322            android:directBootAware="false"
+322-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+323            android:enabled="true"
+323-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+324            android:exported="true"
+324-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+325            android:permission="android.permission.DUMP" >
+325-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+326            <intent-filter>
+326-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+327                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+327-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+327-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+328            </intent-filter>
+329            <intent-filter>
+329-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+330                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+330-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+330-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+331            </intent-filter>
+332            <intent-filter>
+332-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+333                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+333-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+333-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+334            </intent-filter>
+335            <intent-filter>
+335-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+336                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+336-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+336-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User ID\.gradle\caches\transforms-3\fcfb3b74773edf6be4111f50e0093326\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+337            </intent-filter>
+338        </receiver>
+339
+340        <service
+340-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\df68ee729be036d0daafd30e03a8d338\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+341            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+341-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\df68ee729be036d0daafd30e03a8d338\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+342            android:exported="false" >
+342-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\df68ee729be036d0daafd30e03a8d338\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+343            <meta-data
+343-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\df68ee729be036d0daafd30e03a8d338\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+344                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+344-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\df68ee729be036d0daafd30e03a8d338\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+345                android:value="cct" />
+345-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\df68ee729be036d0daafd30e03a8d338\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+346        </service>
+347        <service
+347-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\adffa9912cb75cc22a7d07ce2f5b08ad\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+348            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+348-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\adffa9912cb75cc22a7d07ce2f5b08ad\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+349            android:exported="false"
+349-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\adffa9912cb75cc22a7d07ce2f5b08ad\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+350            android:permission="android.permission.BIND_JOB_SERVICE" >
+350-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\adffa9912cb75cc22a7d07ce2f5b08ad\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+351        </service>
+352
+353        <receiver
+353-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\adffa9912cb75cc22a7d07ce2f5b08ad\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+354            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+354-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\adffa9912cb75cc22a7d07ce2f5b08ad\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+355            android:exported="false" />
+355-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User ID\.gradle\caches\transforms-3\adffa9912cb75cc22a7d07ce2f5b08ad\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+356
+357        <activity
+357-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+358            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+358-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+359            android:clearTaskOnLaunch="true"
+359-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+360            android:screenOrientation="sensorLandscape"
+360-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+361            android:stateNotNeeded="true"
+361-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+362            android:theme="@style/zxing_CaptureTheme"
+362-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+363            android:windowSoftInputMode="stateAlwaysHidden" />
+363-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\User ID\.gradle\caches\transforms-3\557aa32e3671d5bba4fe85d1c6bc65e0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+364    </application>
+365
+366</manifest>

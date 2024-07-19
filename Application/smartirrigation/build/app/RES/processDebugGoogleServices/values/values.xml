@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">1078606133822</string>
+    <string name="google_api_key" translatable="false">AIzaSyBfqMvdy6sBZKTbLueiTOg1fB0M2Q83knU</string>
+    <string name="google_app_id" translatable="false">1:1078606133822:android:22ef6e1dff5d056b6baf6f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBfqMvdy6sBZKTbLueiTOg1fB0M2Q83knU</string>
+    <string name="google_storage_bucket" translatable="false">hydros-firebase-4ac58.appspot.com</string>
+    <string name="project_id" translatable="false">hydros-firebase-4ac58</string>
+</resources>
